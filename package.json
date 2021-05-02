@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/donrajitha/weather_checker/issues"
   },
-  "homepage": "https://github.com/donrajitha/weather_checker#readme"
+  "homepage": "https://github.com/donrajitha/weather_checker#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "hbs": "^4.1.2"
+  }
 }
