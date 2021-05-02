@@ -1,0 +1,22 @@
+{
+  "name": "weather_checker",
+  "version": "1.0.0",
+  "description": "Weather information providing application based on geo locations",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donrajitha/weather_checker.git"
+  },
+  "keywords": [
+    "weather"
+  ],
+  "author": "Rajitha Kumara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donrajitha/weather_checker/issues"
+  },
+  "homepage": "https://github.com/donrajitha/weather_checker#readme"
+}
