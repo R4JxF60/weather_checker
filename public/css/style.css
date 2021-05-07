@@ -106,7 +106,8 @@ a {
 }
 
 .h-line {
-    border: #b9b7b77a solid 1px;
+    background-color: #b9b7b77a;
+    height: 1px;
     border-radius: 5px;
 }
 

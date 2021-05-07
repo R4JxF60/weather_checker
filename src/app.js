@@ -1,6 +1,8 @@
 const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
+const geoFinder = require('./utils/geofinder')
+const { getGEOs } = require('./utils/geofinder')
 
 const app = express()
 
@@ -17,6 +19,16 @@ app.set('views', viewsPath)
 
 app.get('', (req, res) => {
     res.render('index')
+})
+
+app.get('/weather', (req, res) => {
+    res.render('index')
+    const searchData = req.query
+    getGEOs(searchData, (response) => {
+        console.log(response.data.results[0])
+        res.send(response.data.results[0])
+    })
+    //res.send('testing')
 })
 
 
