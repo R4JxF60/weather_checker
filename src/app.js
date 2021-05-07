@@ -1,38 +1,35 @@
-const path = require('path')
-const express = require('express')
-const hbs = require('hbs')
-const geoFinder = require('./utils/geofinder')
-const { getGEOs } = require('./utils/geofinder')
+const express = require('express');
+const path = require('path');
+const hbs = require('hbs');
 
-const app = express()
+const app = express();
+const publicPath = path.join(__dirname, '../public');
+const viewPath = path.join(__dirname, '../templates/views');
+const partialPath = path.join(__dirname, '../templates/partials')
+app.use(express.static(publicPath));
+app.set('view engine', 'hbs');
+app.set('views', viewPath);
+hbs.registerPartials(partialPath);
 
-app.set('view engine', 'hbs')
 
-const publicPath = path.join(__dirname, '../public')
-app.use(express.static(publicPath))
+app.get('/weather', (req, res, next) => {
+    res.render('index', {title: 'Weather'});
+});
 
-const partialsPath = path.join(__dirname, '../templates/partials')
-hbs.registerPartials(partialsPath)
+app.get('/about', (req, res, next) => {
+    res.render('about', {title: "About"});
+});
 
-const viewsPath = path.join(__dirname, '../templates/views')
-app.set('views', viewsPath)
 
-app.get('', (req, res) => {
-    res.render('index')
-})
 
-app.get('/weather', (req, res) => {
-    res.render('index')
-    const searchData = req.query
-    getGEOs(searchData, (response) => {
-        console.log(response.data.results[0])
-        res.send(response.data.results[0])
-    })
-    //res.send('testing')
-})
+
+app.get('/', (req, res, next) => {
+    res.render('index', {title: 'Weather'});
+});
 
 
 
 app.listen(3000, () => {
-    console.log('Server is up and running!')
-})
+    console.log(viewPath)
+    console.log('Server is up and running!');
+});

@@ -4,7 +4,9 @@
   "description": "Weather information providing application based on geo locations",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "start-using-nodemon": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,8 @@
   "homepage": "https://github.com/donrajitha/weather_checker#readme",
   "dependencies": {
     "axios": "^0.21.1",
-    "express": "^4.17.1"
+    "encodeurl": "^1.0.2",
+    "express": "^4.17.1",
+    "hbs": "^4.1.2"
   }
 }
