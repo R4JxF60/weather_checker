@@ -25,4 +25,6 @@ client side rendering. *Perpose: getting basic knowledge inside Nodejs and javas
     *run via nodemon*
     npm run via_nodemon
    
-  
+ # User Interface
+ 
+ ![Screenshot](./public/img/Weather_Checker_UI.png)
