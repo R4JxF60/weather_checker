@@ -16,12 +16,10 @@ app.get('/weather', (req, res, next) => {
     res.render('index', {title: 'Weather'});
 });
 
-app.get('/about', (req, res, next) => {
-    res.render('about', {title: "About"});
+
+app.post('/get-weather', (req, res, next) => {
+    res.send({"res" : "sample"});
 });
-
-
-
 
 app.get('/', (req, res, next) => {
     res.render('index', {title: 'Weather'});

@@ -6,9 +6,7 @@ const encodeurl = require('encodeurl')
 
 
 
-const getGEOs = (location, callback) {
-
-}
+// getGEOs function here
 
 module.exports = {
     getGEOs : getGEOs
