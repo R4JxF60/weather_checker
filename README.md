@@ -1,5 +1,5 @@
 # Weather Checker
-DEVELOPER: R4jix0001
+DEVELOPER: R4JxF60
 
 # Description
 Weather Checker is a **Weather** providing app based on search locations. This web based application built upon **NodeJs** eco system with **ExpressJs** and **Handlebars** for backend and **vanilla javascript** for 
