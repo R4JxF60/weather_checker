@@ -67,6 +67,14 @@ a {
     width: 165px;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+{
+ -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
 #search-input input[type="text"] {
     font-size: 18px;
     color: #696969;
@@ -138,4 +146,76 @@ a {
 #footer-nav ul li {
     list-style: none;
     text-align: right;
+}
+
+.div-content-box {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    line-height: 0.8rem;
+    position: relative;
+}
+
+.div-content-box .span-details-title {
+    font-size: 12px;
+    font-weight: 400;
+    color: #4b4b4b;
+}
+
+.div-content-box .span-details-value {
+    font-size: 12px;
+    font-weight: 200;
+    color: #797979;
+    margin-left: 4px;
+}
+
+.div-content-box .info-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #2c2c2c;
+}
+
+.div-content-box .base-info {
+    margin-top: 8px;
+}
+
+.btn-dynamic {
+    background-color: transparent;
+    border: 1px solid #b9b7b7;
+    border-radius: 30px;
+    width: 70px;
+    padding: 5px 0px;
+    color: #b9b7b7;
+}
+
+.btn-dynamic:hover {
+    cursor: pointer;
+}
+
+.more-button {
+    position: absolute;
+    top: 25px;
+    left: 325px;
+}
+
+.weather-button {
+    position: absolute;
+    top: 25px;
+    left: 225px;
+    border: 2px solid #707070;
+    font-weight: 600;
+    color: #707070;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 20px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: rgba(51, 51, 51, 0.295);
+    border-radius: 10px;
 }
