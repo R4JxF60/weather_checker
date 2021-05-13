@@ -27,4 +27,4 @@ client side rendering. *Perpose: getting basic knowledge inside Nodejs and javas
    
  # User Interface
  
- ![alt text](https://github.com/R4jix0001/weather_checker/public/img/Weather_Checker_UI.png?raw=true)
+ ![alt text](public/img/Weather_Checker_UI.png?raw=true title="UI")
