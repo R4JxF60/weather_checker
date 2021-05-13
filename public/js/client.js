@@ -58,7 +58,7 @@ const showLocations = (locations) => {
 }
 
 async function getLocations(searchQuery) {
-    const url = `https://api.opencagedata.com/geocode/v1/json?q=${searchQuery}&key=YOURKEY`;
+    const url = `https://api.opencagedata.com/geocode/v1/json?q=${searchQuery}&key=b08bd4c6d1d84ad090bee3f82821883a`;
     const response = await fetch(url);
     const locations = await response.json();
     showLocations(locations.results);
