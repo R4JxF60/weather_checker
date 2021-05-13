@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js",
-    "start-using-nodemon": "nodemon app.js"
+    "start": "node src/app.js",
+    "via_nodemon": "nodemon src/app.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,8 @@
     "encodeurl": "^1.0.2",
     "express": "^4.17.1",
     "hbs": "^4.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
